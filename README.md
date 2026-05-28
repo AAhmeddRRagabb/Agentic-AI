@@ -21,9 +21,9 @@ Several tools will be used throughout this learning journey to complete the plan
 
 ## Requirements to Run Python Code
 
-1. Python 3.10 or later.
+1.0 Python 3.10 or later.
 
-2. Create and activate a virtual environment recommended.
+2.0 Create and activate a virtual environment recommended.
 
 * Windows
 ```bash
@@ -45,7 +45,7 @@ source venv_name/bin/activate
 
 
 
-3. Install the required dependencies.
+3.0 Install the required dependencies.
 
 ```bash
 pip install -r requirements.txt
