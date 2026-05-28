@@ -5,8 +5,8 @@ The roadmap for this journey is available in the `__info/` directory located nex
 
 The repository will be organized as follows:
 
-* The main learning directory will be named `phases/` and will be located next to this `README`.
-* Each phase will have its own independent subdirectory inside the `phases/` directory.
+* The main learning directory will be named `learning/` and will be located next to this `README`.
+* Each phase will have its own independent subdirectory inside the `learning/` directory.
 * Each learning topic will be placed in a separate folder within its corresponding phase, containing its related concepts, notes, and practice tasks.
 * The `__info/` directory will contain general resources related to the learning journey, such as roadmaps, plans, Notion notebook links, references, and other supporting materials.
 
@@ -53,7 +53,10 @@ pip install -r requirements.txt
 
 
 
-
+4.0 Copy the `.env.example` file into a `.env` file, then put the important values in the `.env`
+```bash
+cp .env.example .env
+``` 
 
 
 
