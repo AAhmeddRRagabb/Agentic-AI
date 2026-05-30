@@ -1,7 +1,8 @@
 # Agentic-AI
 This repository is intended to document and support my learning journey toward mastering **Agentic AI**, in shā’ Allāh.
 
-The roadmap for this journey is available in the `__info/` directory located next to this `README`. It is divided into structured phases, where each phase focuses on specific concepts, topics, and practical tasks.
+The roadmap for this journey is available in the `__info/` directory located next to this `README`. It is divided into structured phases, where each phase focuses on specific concepts, topics, and practical tasks. The roadmap was primarily developed by @Eng-Ahmed-Hossam.
+
 
 The repository will be organized as follows:
 

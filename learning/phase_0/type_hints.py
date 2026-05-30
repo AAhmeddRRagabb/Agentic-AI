@@ -11,6 +11,8 @@
 #    - API request/response schemas
 #    - ...
 
+# >> Resource: https://www.youtube.com/watch?v=QORvB-_mbZ0
+
 
 ## 1. basic type hinting
 def func(
