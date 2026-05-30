@@ -3,7 +3,7 @@
 # Type Hints in Python
 # ------------------------------------------------------
 
-# ---------------- Type Hints (Type Annotations) -------------------------------------------
+# ----------------------------------- Type Hints (Type Annotations) -------------------------------------------
 # >> a method used to document the variables written in the Python code and improves its readability
 # >> Useful for documenting the type of:
 #    - arguments passed to a function
@@ -12,7 +12,7 @@
 #    - ...
 
 # >> Resource: https://www.youtube.com/watch?v=QORvB-_mbZ0
-
+# ------------------------------------------------------------------------------------------------------------
 
 ## 1. basic type hinting
 def func(
