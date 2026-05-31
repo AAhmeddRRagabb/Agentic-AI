@@ -5,8 +5,8 @@
 
 # ----------------------------------- Data Classes -------------------------------------------
 # >> a special type of classes used mainly to store, represent, and transfer data.
-# 
-# >> Resource: 
+# >> Provides many advantages, some of them describe below
+# >> Resource: https://www.youtube.com/watch?v=HJkY_Bbiqcc
 # ------------------------------------------------------------------------------------------------------------
 
 from dataclasses import dataclass
