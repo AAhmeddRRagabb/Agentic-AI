@@ -9,7 +9,7 @@
 # >> Sections:
 # -----> # 1.0 Basic Validation
 # -----> # 2.0 Validation with Default values
-# -----> # 3.0 Converting into dict / jsonn
+# -----> # 3.0 Converting into dict / json
 # -----> # 4.0 Exploring many fields types
 # -----> # 5.0 Using `Annotated` for re-usable validation types
 # -----> # 6.0 Using validation-friendly data types from Pydantic
