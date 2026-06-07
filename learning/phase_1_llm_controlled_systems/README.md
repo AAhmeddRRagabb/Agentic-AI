@@ -21,6 +21,9 @@ Learning LLMs basic concepts:
 ## Phase Structure
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
+```text
 phase_1_llm_controlled_systems/
 │
 ├── 🚀 main.py
