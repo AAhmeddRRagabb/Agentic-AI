@@ -103,7 +103,8 @@ if __name__ == "__main__":
     ):
         print(token, end = "")
 
-
-    F.print_title("\n\nFinished")
+    print()
+    print()
+    F.print_title("Finished")
     
     

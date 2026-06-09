@@ -7,9 +7,6 @@ from helpers.functional import print_list
 
 from groq import Groq
 from groq.types.chat import ChatCompletion
-from groq.types.chat import ChatCompletionMessage
-from groq.types.chat.chat_completion import Choice
-from groq.types.completion_usage import CompletionUsage
 
 class GroqModelsAPI:
     """
@@ -32,7 +29,8 @@ class GroqModelsAPI:
     def generate(
         self, 
         model_name           : str, 
-        user_input           : str, 
+        user_input           : str,
+        system_prompt        : str | None = None, 
         return_whole_response: bool = False, 
         **kwargs
     ) -> ChatCompletion | str:
@@ -45,7 +43,7 @@ class GroqModelsAPI:
             return_whole_response: whether to return the whole response of just the output text
             **kwargs             : keyword arguments to control model behavior [temperature - top_p - max_tokens - ...]
         """
-        messages = self.create_messages(user_input = user_input)
+        messages = self.create_messages(user_input = user_input, system_prompt = system_prompt)
 
         completion = self.client.chat.completions.create(
             messages = messages,
@@ -62,8 +60,9 @@ class GroqModelsAPI:
 
     def stream(
         self, 
-        model_name: str, 
-        user_input: str, 
+        model_name   : str, 
+        user_input   : str,
+        system_prompt: str | None = None,  
         **kwargs
     ):
         """
@@ -75,7 +74,7 @@ class GroqModelsAPI:
             return_whole_response: whether to return the whole response of just the output text
             **kwargs             : keyword arguments to control model behavior [temperature - top_p - max_tokens - ...]
         """
-        messages = self.create_messages(user_input = user_input)
+        messages = self.create_messages(user_input = user_input, system_prompt = system_prompt)
 
         stream = self.client.chat.completions.create(
             messages = messages,
@@ -98,6 +97,10 @@ class GroqModelsAPI:
         Preparing the inputs for the invoking
         """
         return [
+            {
+                "role"   : "system",
+                "content": system_prompt,
+            },
             {
                 "role"   : "user",
                 "content": user_input

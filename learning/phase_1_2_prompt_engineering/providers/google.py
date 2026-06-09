@@ -3,9 +3,7 @@
 # -----------------------------------------------
 
 
-from helpers.functional import print_list
 
-from google import genai
 from google.genai import types
 from google.genai import Client
 
@@ -27,7 +25,14 @@ class GoogleModelsAPI:
             api_key = api_key
         )
     
-    def generate(self, model_name: str, user_input: str, return_whole_response: bool = False, **kwargs) -> GenerateContentResponse | str:
+    def generate(
+            self, 
+            model_name           : str, 
+            user_input           : str,
+            system_prompt        : str | None = None, 
+            return_whole_response: bool = False, 
+            **kwargs
+        ) -> GenerateContentResponse | str:
         """
         Invoking an LLM from Google
 
@@ -43,19 +48,21 @@ class GoogleModelsAPI:
             model    = model_name,
             contents = contents,
             config   = types.GenerateContentConfig(
+                system_instruction = system_prompt,
                 **kwargs
             )
         )
 
-        if return_whole_response:
-            return response
+        if return_whole_response: 
+            return response # the whole can be read through response.model_dump_json()
         
         return response.text
     
     def stream(
         self, 
-        model_name: str, 
-        user_input: str, 
+        model_name   : str, 
+        user_input   : str,
+        system_prompt: str | None = None, 
         **kwargs
     ):
         """
@@ -73,6 +80,7 @@ class GoogleModelsAPI:
             model    = model_name,
             contents = contents,
             config   = types.GenerateContentConfig(
+                system_instruction = system_prompt,
                 **kwargs
             )
         )
@@ -84,7 +92,7 @@ class GoogleModelsAPI:
                 yield content
 
 
-    def get_contents(self, user_input: str, system_prompt: str | None = None) -> list[types.Content]:
+    def get_contents(self, user_input: str) -> list[types.Content]:
         return [
             types.Content(
                 role = "user",
@@ -92,7 +100,9 @@ class GoogleModelsAPI:
                     types.Part.from_text(text = user_input)
                 ]
             )
-        ]    
+        ]
+
+
     
    
 

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "review": "The movie was beautifully shot, and the story kept me engaged from start to finish.",
+    "sentiment": "positive"
+  },
+  {
+    "id": 2,
+    "review": "Great acting, emotional scenes, and a satisfying ending. I would definitely recommend it.",
+    "sentiment": "positive"
+  },
+  {
+    "id": 3,
+    "review": "The pacing was strong, the characters felt real, and the soundtrack made the experience even better.",
+    "sentiment": "positive"
+  },
+  {
+    "id": 4,
+    "review": "The movie was okay. Some scenes were interesting, but others felt a little slow.",
+    "sentiment": "neutral"
+  },
+  {
+    "id": 5,
+    "review": "I watched it mainly because it was trending. It was neither bad nor especially memorable.",
+    "sentiment": "neutral"
+  },
+  {
+    "id": 6,
+    "review": "The visuals were decent, but the story was predictable and did not leave a strong impression.",
+    "sentiment": "neutral"
+  },
+  {
+    "id": 7,
+    "review": "I liked a few performances, but overall the movie felt average and forgettable.",
+    "sentiment": "neutral"
+  },
+  {
+    "id": 8,
+    "review": "The plot was confusing, the dialogue felt unnatural, and I lost interest halfway through.",
+    "sentiment": "negative"
+  },
+  {
+    "id": 9,
+    "review": "Very disappointing. The trailer looked exciting, but the actual movie was boring and poorly written.",
+    "sentiment": "negative"
+  },
+  {
+    "id": 10,
+    "review": "The movie dragged for too long, and the ending felt rushed and unsatisfying.",
+    "sentiment": "negative"
+  }
+]
