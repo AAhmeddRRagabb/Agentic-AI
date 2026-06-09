@@ -1,7 +1,6 @@
 # ---------------------------------------------
 # Import general utility functions
 # ---------------------------------------------
-import os
 from typing import Any
 import json
 from pathlib import Path
@@ -120,8 +119,6 @@ def print_list(list_obj: list[Any], n_identation: int, item_name: str):
         print()    
 
 
-DATA_PATH = "/mnt/d/Focus/_____Active_______/__Agentic_AI/Agentic_AI/learning/phase_1_2_prompt_engineering/data/"
-def load_json(file_name: str):
-    file_path = os.path.join(DATA_PATH, file_name)
+def load_json(file_path: str):
     with open(file_path, encoding = "utf-8", mode = "r") as f:
         return json.load(f)

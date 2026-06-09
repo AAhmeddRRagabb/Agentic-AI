@@ -22,7 +22,7 @@ Return only:
 - neutral: if neither good or bad.
 
 Rules
-- You should only return one word, either positive, negatice, or neutral depending on your analysis of the review.
+- You should only return one word, either positive, negative, or neutral depending on your analysis of the review.
 
 Classify the review: 
 """
@@ -37,9 +37,9 @@ Return only:
 - neutral: if neither good or bad.
 
 Rules
-- You should only return one word, either positive, negatice, or neutral depending on your analysis of the review.
+- You should only return one word, either positive, negative, or neutral depending on your analysis of the review.
 
-Examples
+Example
 - Classify this review: This is a very interesting movie, it shows very strong drama scenes with good action moments.
   Classification: positive 
 
@@ -54,7 +54,7 @@ Return only:
 - neutral: if neither good or bad.
 
 Rules
-- You should only return one word, either positive, negatice, or neutral depending on your analysis of the review.
+- You should only return one word, either positive, negative, or neutral depending on your analysis of the review.
 
 Examples
 - Classify this review: This is a very interesting movie, it shows very strong drama scenes with good action moments.
