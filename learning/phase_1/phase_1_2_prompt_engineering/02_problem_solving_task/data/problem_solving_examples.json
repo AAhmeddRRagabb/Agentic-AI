@@ -1,0 +1,72 @@
+[
+  {
+    "problem": "Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?",
+    "expected_answer": 28,
+    "unit": "pounds"
+  },
+  {
+    "problem": "Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?",
+    "expected_answer": 15,
+    "unit": "pencils"
+  },
+  {
+    "problem": "A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?",
+    "expected_answer": 22,
+    "unit": "passengers"
+  },
+  {
+    "problem": "Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?",
+    "expected_answer": 4,
+    "unit": "cookies"
+  },
+  {
+    "problem": "A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?",
+    "expected_answer": 6,
+    "unit": "pounds"
+  },
+  {
+    "problem": "A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?",
+    "expected_answer": 280,
+    "unit": "pounds"
+  },
+  {
+    "problem": "A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?",
+    "expected_answer": 800,
+    "unit": "milliliters"
+  },
+  {
+    "problem": "A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?",
+    "expected_answer": 3,
+    "unit": "kilometers"
+  },
+  {
+    "problem": "A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?",
+    "expected_answer": 3,
+    "unit": "buses"
+  },
+  {
+    "problem": "A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?",
+    "expected_answer": 9,
+    "unit": "papers"
+  },
+  {
+    "problem": "A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?",
+    "expected_answer": 65,
+    "unit": "percent"
+  },
+  {
+    "problem": "A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?",
+    "expected_answer": 35,
+    "unit": "cars"
+  },
+  {
+    "problem": "A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?",
+    "expected_answer": 17,
+    "unit": "eggs"
+  },
+  {
+    "problem": "A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?",
+    "expected_answer": 15,
+    "unit": "meals"
+  }
+]

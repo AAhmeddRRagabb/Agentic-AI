@@ -1,0 +1,4693 @@
+========================================= Starting the APP =========================================
+
+
+====> Testing Combination: llama-3.1-8b-instant | Prompt: v1 | CFG: {'temperature': 0, 'max_tokens': 256} <====
+
+>> Sample #1
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 28,
+  "unit": "pounds",
+  "solving_steps": [
+    "Sara initially had 30 pounds.",
+    "Her brother gave her another 3 pounds, so now she has 30 + 3 = 33 pounds.",
+    "Then, she bought bread for 5 pounds, so now she has 33 - 5 = 28 pounds."
+  ]
+}
+
+>> Problem:
+Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+>> Model Reasoning Steps:
+	- Sara initially had 30 pounds.
+	- Her brother gave her another 3 pounds, so now she has 30 + 3 = 33 pounds.
+	- Then, she bought bread for 5 pounds, so now she has 33 - 5 = 28 pounds.
+
+
+>> Final Actual Result: 28 pounds
+>> Final Model Result : 28 pounds
+
+
+-----
+
+
+>> Sample #2
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": [
+    "Omar initially had 12 pencils.",
+    "He gave 4 pencils to his friend, so he had 12 - 4 = 8 pencils left.",
+    "His teacher gave him 7 more pencils, so now he has 8 + 7 = 15 pencils."
+  ]
+}
+
+>> Problem:
+Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+>> Model Reasoning Steps:
+	- Omar initially had 12 pencils.
+	- He gave 4 pencils to his friend, so he had 12 - 4 = 8 pencils left.
+	- His teacher gave him 7 more pencils, so now he has 8 + 7 = 15 pencils.
+
+
+>> Final Actual Result: 15 pencils
+>> Final Model Result : 15 pencils
+
+
+-----
+
+
+>> Sample #3
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "The bus initially had 18 passengers.",
+    "5 passengers got off at the first stop, so we subtract 5 from 18: 18 - 5 = 13.",
+    "9 passengers got on at the first stop, so we add 9 to 13: 13 + 9 = 22."
+  ]
+}
+
+>> Problem:
+A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+>> Model Reasoning Steps:
+	- The bus initially had 18 passengers.
+	- 5 passengers got off at the first stop, so we subtract 5 from 18: 18 - 5 = 13.
+	- 9 passengers got on at the first stop, so we add 9 to 13: 13 + 9 = 22.
+
+
+>> Final Actual Result: 22 passengers
+>> Final Model Result : 22 passengers
+
+
+-----
+
+
+>> Sample #4
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 4,
+  "unit": "cookies",
+  "solving_steps": [
+    "To find the number of cookies in each box, we need to divide the total number of cookies by the number of boxes.",
+    "Total number of cookies = 24",
+    "Number of boxes = 6",
+    "Cookies per box = Total number of cookies / Number of boxes = 24 / 6 = 4"
+  ]
+}
+
+>> Problem:
+Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+>> Model Reasoning Steps:
+	- To find the number of cookies in each box, we need to divide the total number of cookies by the number of boxes.
+	- Total number of cookies = 24
+	- Number of boxes = 6
+	- Cookies per box = Total number of cookies / Number of boxes = 24 / 6 = 4
+
+
+>> Final Actual Result: 4 cookies
+>> Final Model Result : 4 cookies
+
+
+-----
+
+
+>> Sample #5
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 10,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the total cost of the notebooks: 3 notebooks * 8 pounds/notebook = 24 pounds",
+    "Subtract the total cost from the amount paid: 30 pounds - 24 pounds = 6 pounds",
+    "However, the problem states that Ali should get change, so the correct calculation is: 30 pounds - 24 pounds = 6 pounds, but since Ali paid with 30 pounds, he should get 6 pounds as change, which is the correct answer."
+  ]
+}
+
+>> Problem:
+A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+>> Model Reasoning Steps:
+	- Calculate the total cost of the notebooks: 3 notebooks * 8 pounds/notebook = 24 pounds
+	- Subtract the total cost from the amount paid: 30 pounds - 24 pounds = 6 pounds
+	- However, the problem states that Ali should get change, so the correct calculation is: 30 pounds - 24 pounds = 6 pounds, but since Ali paid with 30 pounds, he should get 6 pounds as change, which is the correct answer.
+
+
+>> Final Actual Result: 6 pounds
+>> Final Model Result : 10 pounds
+
+
+-----
+
+
+>> Sample #6
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 280,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the cost of cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds",
+    "Add the cost of snacks: 200 pounds + 80 pounds = 280 pounds"
+  ]
+}
+
+>> Problem:
+A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+>> Model Reasoning Steps:
+	- Calculate the cost of cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds
+	- Add the cost of snacks: 200 pounds + 80 pounds = 280 pounds
+
+
+>> Final Actual Result: 280 pounds
+>> Final Model Result : 280 pounds
+
+
+-----
+
+
+>> Sample #7
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 800,
+  "unit": "milliliters",
+  "solving_steps": [
+    "First, we need to convert 2 liters to milliliters. Since 1 liter is equal to 1000 milliliters, 2 liters is equal to 2000 milliliters.",
+    "Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening, so the total amount of water he drank is 500 + 700 = 1200 milliliters.",
+    "To find the amount of water left, we subtract the total amount of water drank from the initial amount of water. So, 2000 - 1200 = 800 milliliters."
+  ]
+}
+
+>> Problem:
+A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+>> Model Reasoning Steps:
+	- First, we need to convert 2 liters to milliliters. Since 1 liter is equal to 1000 milliliters, 2 liters is equal to 2000 milliliters.
+	- Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening, so the total amount of water he drank is 500 + 700 = 1200 milliliters.
+	- To find the amount of water left, we subtract the total amount of water drank from the initial amount of water. So, 2000 - 1200 = 800 milliliters.
+
+
+>> Final Actual Result: 800 milliliters
+>> Final Model Result : 800 milliliters
+
+
+-----
+
+
+>> Sample #8
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "The runner planned to run 10 kilometers.",
+    "He ran 3 kilometers before breakfast.",
+    "He ran 4 kilometers after breakfast.",
+    "Total kilometers run = 3 + 4 = 7 kilometers.",
+    "Kilometers left to finish the plan = 10 - 7 = 3 kilometers."
+  ]
+}
+
+>> Problem:
+A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+>> Model Reasoning Steps:
+	- The runner planned to run 10 kilometers.
+	- He ran 3 kilometers before breakfast.
+	- He ran 4 kilometers after breakfast.
+	- Total kilometers run = 3 + 4 = 7 kilometers.
+	- Kilometers left to finish the plan = 10 - 7 = 3 kilometers.
+
+
+>> Final Actual Result: 3 kilometers
+>> Final Model Result : 3 kilometers
+
+
+-----
+
+
+>> Sample #9
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 3,
+  "unit": "buses",
+  "solving_steps": [
+    "Divide the total number of students by the number of students each bus can carry.",
+    "45 ÷ 15 = 3"
+  ]
+}
+
+>> Problem:
+A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+>> Model Reasoning Steps:
+	- Divide the total number of students by the number of students each bus can carry.
+	- 45 ÷ 15 = 3
+
+
+>> Final Actual Result: 3 buses
+>> Final Model Result : 3 buses
+
+
+-----
+
+
+>> Sample #10
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 9,
+  "unit": "papers",
+  "solving_steps": [
+    "Total number of exam papers = 36",
+    "Number of papers graded before lunch = 12",
+    "Number of papers graded after lunch = 15",
+    "Total number of papers graded = 12 + 15 = 27",
+    "Number of papers still ungraded = Total number of exam papers - Total number of papers graded = 36 - 27 = 9"
+  ]
+}
+
+>> Problem:
+A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+>> Model Reasoning Steps:
+	- Total number of exam papers = 36
+	- Number of papers graded before lunch = 12
+	- Number of papers graded after lunch = 15
+	- Total number of papers graded = 12 + 15 = 27
+	- Number of papers still ungraded = Total number of exam papers - Total number of papers graded = 36 - 27 = 9
+
+
+>> Final Actual Result: 9 papers
+>> Final Model Result : 9 papers
+
+
+-----
+
+
+>> Sample #11
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 77.5,
+  "unit": "%",
+  "solving_steps": [
+    "The phone battery was at 80 percent.",
+    "It lost 25 percent, so we subtract 25 from 80: 80 - 25 = 55.",
+    "Then it gained 10 percent, so we add 10 to 55: 55 + 10 = 65.",
+    "However, the battery was initially at 80 percent, not 55. So we need to calculate the correct loss first.",
+    "The correct loss is 25 percent of 80 percent, which is 0.25 * 80 = 20 percent.",
+    "So the battery was at 80 - 20 = 60 percent after losing 25 percent.",
+    "Then it gained 10 percent, so we add 10 to 60: 60 + 10 = 70.",
+    "However, the battery was initially at 80 percent, not 60. So we need to calculate the correct loss first.",
+    "The correct loss is 25 percent of 80 percent, which is 0.25 * 80 = 20 percent.",
+    "So the battery was at 80 -
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+{
+  "answer": 77.5,
+  "unit": "%",
+  "solving_steps": [
+    "The phone battery was at 80 percent.",
+    "It lost 25 percent, so we subtract 25 from 80: 80 - 25 = 55.",
+    "Then it gained 10 percent, so we add 10 to 55: 55 + 10 = 65.",
+    "However, the battery was initially at 80 percent, not 55. So we need to calculate the correct loss first.",
+    "The correct loss is 25 percent of 80 percent, which is 0.25 * 80 = 20 percent.",
+    "So the battery was at 80 - 20 = 60 percent after losing 25 percent.",
+    "Then it gained 10 percent, so we add 10 to 60: 60 + 10 = 70.",
+    "However, the battery was initially at 80 percent, not 60. So we need to calculate the correct loss first.",
+    "The correct loss is 25 percent of 80 percent, which is 0.25 * 80 = 20 percent.",
+    "So the battery was at 80 -
+
+>> Sample #12
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": [
+    "The car park initially had 40 cars.",
+    "12 cars left during the morning, so we subtract 12 from 40: 40 - 12 = 28.",
+    "7 cars entered during the morning, so we add 7 to 28: 28 + 7 = 35."
+  ]
+}
+
+>> Problem:
+A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+>> Model Reasoning Steps:
+	- The car park initially had 40 cars.
+	- 12 cars left during the morning, so we subtract 12 from 40: 40 - 12 = 28.
+	- 7 cars entered during the morning, so we add 7 to 28: 28 + 7 = 35.
+
+
+>> Final Actual Result: 35 cars
+>> Final Model Result : 35 cars
+
+
+-----
+
+
+>> Sample #13
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 17,
+  "unit": "eggs",
+  "solving_steps": [
+    "The farmer initially collected 60 eggs.",
+    "He sold 35 eggs, so we subtract 35 from 60: 60 - 35 = 25.",
+    "He used 8 eggs at home, so we subtract 8 from 25: 25 - 8 = 17."
+  ]
+}
+
+>> Problem:
+A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+>> Model Reasoning Steps:
+	- The farmer initially collected 60 eggs.
+	- He sold 35 eggs, so we subtract 35 from 60: 60 - 35 = 25.
+	- He used 8 eggs at home, so we subtract 8 from 25: 25 - 8 = 17.
+
+
+>> Final Actual Result: 17 eggs
+>> Final Model Result : 17 eggs
+
+
+-----
+
+
+>> Sample #14
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "Total meals prepared = 90",
+    "Meals sold by noon = 48",
+    "Meals sold in the afternoon = 27",
+    "Total meals sold = 48 + 27 = 75",
+    "Meals remaining = Total meals prepared - Total meals sold = 90 - 75 = 15"
+  ]
+}
+
+>> Problem:
+A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+>> Model Reasoning Steps:
+	- Total meals prepared = 90
+	- Meals sold by noon = 48
+	- Meals sold in the afternoon = 27
+	- Total meals sold = 48 + 27 = 75
+	- Meals remaining = Total meals prepared - Total meals sold = 90 - 75 = 15
+
+
+>> Final Actual Result: 15 meals
+>> Final Model Result : 15 meals
+
+
+-----
+
+
+====> Testing Combination: llama-3.1-8b-instant | Prompt: v2 | CFG: {'temperature': 0, 'max_tokens': 256} <====
+
+>> Sample #1
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 28,
+  "unit": "pounds",
+  "solving_steps": [
+    "Sara initially had 30 pounds.",
+    "Her brother gave her another 3 pounds, so she now has 30 + 3 = 33 pounds.",
+    "After that, she bought bread for 5 pounds, so she now has 33 - 5 = 28 pounds."
+  ]
+}
+
+>> Problem:
+Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+>> Model Reasoning Steps:
+	- Sara initially had 30 pounds.
+	- Her brother gave her another 3 pounds, so she now has 30 + 3 = 33 pounds.
+	- After that, she bought bread for 5 pounds, so she now has 33 - 5 = 28 pounds.
+
+
+>> Final Actual Result: 28 pounds
+>> Final Model Result : 28 pounds
+
+
+-----
+
+
+>> Sample #2
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": [
+    "Omar initially had 12 pencils.",
+    "He gave 4 pencils to his friend, so he had 12 - 4 = 8 pencils left.",
+    "His teacher gave him 7 more pencils, so now he has 8 + 7 = 15 pencils."
+  ]
+}
+
+>> Problem:
+Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+>> Model Reasoning Steps:
+	- Omar initially had 12 pencils.
+	- He gave 4 pencils to his friend, so he had 12 - 4 = 8 pencils left.
+	- His teacher gave him 7 more pencils, so now he has 8 + 7 = 15 pencils.
+
+
+>> Final Actual Result: 15 pencils
+>> Final Model Result : 15 pencils
+
+
+-----
+
+
+>> Sample #3
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "Start with 18 passengers.",
+    "5 passengers got off, so subtract 5 from 18: 18 - 5 = 13.",
+    "9 passengers got on, so add 9 to 13: 13 + 9 = 22."
+  ]
+}
+
+>> Problem:
+A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+>> Model Reasoning Steps:
+	- Start with 18 passengers.
+	- 5 passengers got off, so subtract 5 from 18: 18 - 5 = 13.
+	- 9 passengers got on, so add 9 to 13: 13 + 9 = 22.
+
+
+>> Final Actual Result: 22 passengers
+>> Final Model Result : 22 passengers
+
+
+-----
+
+
+>> Sample #4
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 4,
+  "unit": "cookies",
+  "solving_steps": [
+    "To find the number of cookies in each box, we need to divide the total number of cookies by the number of boxes.",
+    "Total number of cookies = 24",
+    "Number of boxes = 6",
+    "Cookies per box = Total number of cookies / Number of boxes = 24 / 6 = 4"
+  ]
+}
+
+>> Problem:
+Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+>> Model Reasoning Steps:
+	- To find the number of cookies in each box, we need to divide the total number of cookies by the number of boxes.
+	- Total number of cookies = 24
+	- Number of boxes = 6
+	- Cookies per box = Total number of cookies / Number of boxes = 24 / 6 = 4
+
+
+>> Final Actual Result: 4 cookies
+>> Final Model Result : 4 cookies
+
+
+-----
+
+
+>> Sample #5
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 10,
+  "unit": "pounds",
+  "solving_steps": [
+    "First, calculate the total cost of the notebooks: 3 notebooks * 8 pounds/notebook = 24 pounds.",
+    "Then, subtract the total cost from the amount Ali paid: 30 pounds - 24 pounds = 6 pounds.",
+    "However, the problem states that Ali should get change, so the correct calculation is: 30 pounds - 24 pounds = 6 pounds."
+  ]
+}
+
+>> Problem:
+A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+>> Model Reasoning Steps:
+	- First, calculate the total cost of the notebooks: 3 notebooks * 8 pounds/notebook = 24 pounds.
+	- Then, subtract the total cost from the amount Ali paid: 30 pounds - 24 pounds = 6 pounds.
+	- However, the problem states that Ali should get change, so the correct calculation is: 30 pounds - 24 pounds = 6 pounds.
+
+
+>> Final Actual Result: 6 pounds
+>> Final Model Result : 10 pounds
+
+
+-----
+
+
+>> Sample #6
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 280,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the cost of the cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds",
+    "Add the cost of the snacks: 200 pounds + 80 pounds = 280 pounds"
+  ]
+}
+
+>> Problem:
+A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+>> Model Reasoning Steps:
+	- Calculate the cost of the cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds
+	- Add the cost of the snacks: 200 pounds + 80 pounds = 280 pounds
+
+
+>> Final Actual Result: 280 pounds
+>> Final Model Result : 280 pounds
+
+
+-----
+
+
+>> Sample #7
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 800,
+  "unit": "milliliters",
+  "solving_steps": [
+    "First, we need to convert 2 liters to milliliters. Since 1 liter is equal to 1000 milliliters, 2 liters is equal to 2000 milliliters.",
+    "Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening, so the total amount of water he drank is 500 + 700 = 1200 milliliters.",
+    "To find the amount of water left, we subtract the total amount of water drank from the initial amount of water. So, 2000 - 1200 = 800 milliliters."
+  ]
+}
+
+>> Problem:
+A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+>> Model Reasoning Steps:
+	- First, we need to convert 2 liters to milliliters. Since 1 liter is equal to 1000 milliliters, 2 liters is equal to 2000 milliliters.
+	- Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening, so the total amount of water he drank is 500 + 700 = 1200 milliliters.
+	- To find the amount of water left, we subtract the total amount of water drank from the initial amount of water. So, 2000 - 1200 = 800 milliliters.
+
+
+>> Final Actual Result: 800 milliliters
+>> Final Model Result : 800 milliliters
+
+
+-----
+
+
+>> Sample #8
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "The runner planned to run 10 kilometers.",
+    "He ran 3 kilometers before breakfast.",
+    "He ran 4 kilometers after breakfast.",
+    "Total kilometers run = 3 + 4 = 7 kilometers.",
+    "Kilometers left to finish the plan = 10 - 7 = 3 kilometers."
+  ]
+}
+
+>> Problem:
+A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+>> Model Reasoning Steps:
+	- The runner planned to run 10 kilometers.
+	- He ran 3 kilometers before breakfast.
+	- He ran 4 kilometers after breakfast.
+	- Total kilometers run = 3 + 4 = 7 kilometers.
+	- Kilometers left to finish the plan = 10 - 7 = 3 kilometers.
+
+
+>> Final Actual Result: 3 kilometers
+>> Final Model Result : 3 kilometers
+
+
+-----
+
+
+>> Sample #9
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 3,
+  "unit": "buses",
+  "solving_steps": [
+    "Divide the total number of students by the number of students each bus can carry.",
+    "45 students / 15 students per bus = 3 buses"
+  ]
+}
+
+>> Problem:
+A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+>> Model Reasoning Steps:
+	- Divide the total number of students by the number of students each bus can carry.
+	- 45 students / 15 students per bus = 3 buses
+
+
+>> Final Actual Result: 3 buses
+>> Final Model Result : 3 buses
+
+
+-----
+
+
+>> Sample #10
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 9,
+  "unit": "papers",
+  "solving_steps": [
+    "The teacher has 36 exam papers in total.",
+    "She graded 12 papers before lunch.",
+    "She graded 15 papers after lunch.",
+    "To find the number of papers still ungraded, we need to subtract the total number of papers graded from the total number of papers.",
+    "Total papers graded = 12 (before lunch) + 15 (after lunch) = 27 papers.",
+    "Papers still ungraded = Total papers - Total papers graded = 36 - 27 = 9 papers."
+  ]
+}
+
+>> Problem:
+A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+>> Model Reasoning Steps:
+	- The teacher has 36 exam papers in total.
+	- She graded 12 papers before lunch.
+	- She graded 15 papers after lunch.
+	- To find the number of papers still ungraded, we need to subtract the total number of papers graded from the total number of papers.
+	- Total papers graded = 12 (before lunch) + 15 (after lunch) = 27 papers.
+	- Papers still ungraded = Total papers - Total papers graded = 36 - 27 = 9 papers.
+
+
+>> Final Actual Result: 9 papers
+>> Final Model Result : 9 papers
+
+
+-----
+
+
+>> Sample #11
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 82.5,
+  "unit": "percent",
+  "solving_steps": [
+    "The battery was initially at 80 percent.",
+    "It lost 25 percent, so we subtract 25 from 80: 80 - 25 = 55.",
+    "Then it gained 10 percent, so we add 10 to 55: 55 + 10 = 65.",
+    "However, we need to find the percentage of the remaining capacity after losing 25 percent of 80 percent, not 100 percent.",
+    "So, we first find 25 percent of 80 percent: 0.25 * 80 = 20.",
+    "Then we subtract 20 from 80: 80 - 20 = 60.",
+    "Now we add 10 percent to 60: 60 + 0.10 * 60 = 66.",
+    "However, this is still not correct. We need to find the percentage of the remaining capacity after losing 25 percent of 80 percent.",
+    "So, we first find 25 percent of 80 percent: 0.25 * 80 = 20.",
+    "Then we subtract 20 from 80:
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+{
+  "answer": 82.5,
+  "unit": "percent",
+  "solving_steps": [
+    "The battery was initially at 80 percent.",
+    "It lost 25 percent, so we subtract 25 from 80: 80 - 25 = 55.",
+    "Then it gained 10 percent, so we add 10 to 55: 55 + 10 = 65.",
+    "However, we need to find the percentage of the remaining capacity after losing 25 percent of 80 percent, not 100 percent.",
+    "So, we first find 25 percent of 80 percent: 0.25 * 80 = 20.",
+    "Then we subtract 20 from 80: 80 - 20 = 60.",
+    "Now we add 10 percent to 60: 60 + 0.10 * 60 = 66.",
+    "However, this is still not correct. We need to find the percentage of the remaining capacity after losing 25 percent of 80 percent.",
+    "So, we first find 25 percent of 80 percent: 0.25 * 80 = 20.",
+    "Then we subtract 20 from 80:
+
+>> Sample #12
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": [
+    "The car park initially had 40 cars.",
+    "12 cars left, so we subtract 12 from 40: 40 - 12 = 28.",
+    "7 cars entered, so we add 7 to 28: 28 + 7 = 35."
+  ]
+}
+
+>> Problem:
+A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+>> Model Reasoning Steps:
+	- The car park initially had 40 cars.
+	- 12 cars left, so we subtract 12 from 40: 40 - 12 = 28.
+	- 7 cars entered, so we add 7 to 28: 28 + 7 = 35.
+
+
+>> Final Actual Result: 35 cars
+>> Final Model Result : 35 cars
+
+
+-----
+
+
+>> Sample #13
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 17,
+  "unit": "eggs",
+  "solving_steps": [
+    "The farmer started with 60 eggs.",
+    "He sold 35 eggs, so we subtract 35 from 60: 60 - 35 = 25.",
+    "He used 8 eggs at home, so we subtract 8 from 25: 25 - 8 = 17."
+  ]
+}
+
+>> Problem:
+A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+>> Model Reasoning Steps:
+	- The farmer started with 60 eggs.
+	- He sold 35 eggs, so we subtract 35 from 60: 60 - 35 = 25.
+	- He used 8 eggs at home, so we subtract 8 from 25: 25 - 8 = 17.
+
+
+>> Final Actual Result: 17 eggs
+>> Final Model Result : 17 eggs
+
+
+-----
+
+
+>> Sample #14
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "Total meals prepared = 90",
+    "Meals sold by noon = 48",
+    "Meals sold in the afternoon = 27",
+    "Total meals sold = 48 + 27 = 75",
+    "Meals remaining = Total meals prepared - Total meals sold = 90 - 75 = 15"
+  ]
+}
+
+>> Problem:
+A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+>> Model Reasoning Steps:
+	- Total meals prepared = 90
+	- Meals sold by noon = 48
+	- Meals sold in the afternoon = 27
+	- Total meals sold = 48 + 27 = 75
+	- Meals remaining = Total meals prepared - Total meals sold = 90 - 75 = 15
+
+
+>> Final Actual Result: 15 meals
+>> Final Model Result : 15 meals
+
+
+-----
+
+
+====> Testing Combination: llama-3.1-8b-instant | Prompt: one_shot | CFG: {'temperature': 0, 'max_tokens': 256} <====
+
+>> Sample #1
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 28,
+  "unit": "pounds",
+  "solving_steps": [
+    "Sara first has 30 pounds.",
+    "Her brother gives her 3, she now has 30 + 3 = 33 pounds.",
+    "She bought bread for 5 pounds, so she now has 33 - 5 = 28 pounds."
+  ]
+}
+
+>> Problem:
+Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+>> Model Reasoning Steps:
+	- Sara first has 30 pounds.
+	- Her brother gives her 3, she now has 30 + 3 = 33 pounds.
+	- She bought bread for 5 pounds, so she now has 33 - 5 = 28 pounds.
+
+
+>> Final Actual Result: 28 pounds
+>> Final Model Result : 28 pounds
+
+
+-----
+
+
+>> Sample #2
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": ["Omar first has 12 pencils.", "He gives 4 pencils to his friend, he now has 12 - 4 = 8 pencils.", "His teacher gives him 7 more pencils, he now has 8 + 7 = 15 pencils."]
+}
+
+>> Problem:
+Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+>> Model Reasoning Steps:
+	- Omar first has 12 pencils.
+	- He gives 4 pencils to his friend, he now has 12 - 4 = 8 pencils.
+	- His teacher gives him 7 more pencils, he now has 8 + 7 = 15 pencils.
+
+
+>> Final Actual Result: 15 pencils
+>> Final Model Result : 15 pencils
+
+
+-----
+
+
+>> Sample #3
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "The bus initially had 18 passengers.",
+    "At the first stop, 5 passengers got off, so the bus now has 18 - 5 = 13 passengers.",
+    "Then, 9 passengers got on, so the bus now has 13 + 9 = 22 passengers."
+  ]
+}
+
+>> Problem:
+A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+>> Model Reasoning Steps:
+	- The bus initially had 18 passengers.
+	- At the first stop, 5 passengers got off, so the bus now has 18 - 5 = 13 passengers.
+	- Then, 9 passengers got on, so the bus now has 13 + 9 = 22 passengers.
+
+
+>> Final Actual Result: 22 passengers
+>> Final Model Result : 22 passengers
+
+
+-----
+
+
+>> Sample #4
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 4,
+  "unit": "cookies",
+  "solving_steps": ["Mona baked 24 cookies.", "She packed them equally into 6 small boxes.", "To find the number of cookies in each box, we divide the total number of cookies by the number of boxes: 24 / 6 = 4 cookies."]
+}
+
+>> Problem:
+Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+>> Model Reasoning Steps:
+	- Mona baked 24 cookies.
+	- She packed them equally into 6 small boxes.
+	- To find the number of cookies in each box, we divide the total number of cookies by the number of boxes: 24 / 6 = 4 cookies.
+
+
+>> Final Actual Result: 4 cookies
+>> Final Model Result : 4 cookies
+
+
+-----
+
+
+>> Sample #5
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 14,
+  "unit": "pounds",
+  "solving_steps": [
+    "Ali bought 3 notebooks for 8 pounds each, so the total cost is 3 * 8 = 24 pounds.",
+    "He paid with 30 pounds, so the change is 30 - 24 = 6 pounds.",
+    "However, the question asks for the change, but the calculation is correct, so the change is indeed 6 pounds."
+  ]
+}
+
+>> Problem:
+A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+>> Model Reasoning Steps:
+	- Ali bought 3 notebooks for 8 pounds each, so the total cost is 3 * 8 = 24 pounds.
+	- He paid with 30 pounds, so the change is 30 - 24 = 6 pounds.
+	- However, the question asks for the change, but the calculation is correct, so the change is indeed 6 pounds.
+
+
+>> Final Actual Result: 6 pounds
+>> Final Model Result : 14 pounds
+
+
+-----
+
+
+>> Sample #6
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 240,
+  "unit": "pounds",
+  "solving_steps": [
+    "Each ticket costs 50 pounds.",
+    "They bought 4 tickets, so the total cost of tickets is 4 * 50 = 200 pounds.",
+    "They also bought snacks for 80 pounds.",
+    "The total amount they paid is 200 + 80 = 280 pounds."
+  ]
+}
+
+>> Problem:
+A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+>> Model Reasoning Steps:
+	- Each ticket costs 50 pounds.
+	- They bought 4 tickets, so the total cost of tickets is 4 * 50 = 200 pounds.
+	- They also bought snacks for 80 pounds.
+	- The total amount they paid is 200 + 80 = 280 pounds.
+
+
+>> Final Actual Result: 280 pounds
+>> Final Model Result : 240 pounds
+
+
+-----
+
+
+>> Sample #7
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 800,
+  "unit": "milliliters",
+  "solving_steps": [
+    "First, we need to convert 2 liters to milliliters. Since 1 liter is 1000 milliliters, 2 liters is 2 * 1000 = 2000 milliliters.",
+    "Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening, so he drank a total of 500 + 700 = 1200 milliliters.",
+    "To find out how many milliliters of water are left, we subtract the amount Ahmed drank from the total amount of water: 2000 - 1200 = 800 milliliters."
+  ]
+}
+
+>> Problem:
+A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+>> Model Reasoning Steps:
+	- First, we need to convert 2 liters to milliliters. Since 1 liter is 1000 milliliters, 2 liters is 2 * 1000 = 2000 milliliters.
+	- Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening, so he drank a total of 500 + 700 = 1200 milliliters.
+	- To find out how many milliliters of water are left, we subtract the amount Ahmed drank from the total amount of water: 2000 - 1200 = 800 milliliters.
+
+
+>> Final Actual Result: 800 milliliters
+>> Final Model Result : 800 milliliters
+
+
+-----
+
+
+>> Sample #8
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "The runner planned to run 10 kilometers.",
+    "He ran 3 kilometers before breakfast.",
+    "He ran 4 kilometers after breakfast.",
+    "Total kilometers run = 3 + 4 = 7 kilometers.",
+    "Kilometers left to finish the plan = 10 - 7 = 3 kilometers."
+  ]
+}
+
+>> Problem:
+A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+>> Model Reasoning Steps:
+	- The runner planned to run 10 kilometers.
+	- He ran 3 kilometers before breakfast.
+	- He ran 4 kilometers after breakfast.
+	- Total kilometers run = 3 + 4 = 7 kilometers.
+	- Kilometers left to finish the plan = 10 - 7 = 3 kilometers.
+
+
+>> Final Actual Result: 3 kilometers
+>> Final Model Result : 3 kilometers
+
+
+-----
+
+
+>> Sample #9
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 3,
+  "unit": "buses",
+  "solving_steps": [
+    "First, we need to find out how many buses are needed to carry 45 students.",
+    "Each bus can carry 15 students.",
+    "To find the number of buses needed, we divide the total number of students by the number of students each bus can carry.",
+    "45 ÷ 15 = 3"
+  ]
+}
+
+>> Problem:
+A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+>> Model Reasoning Steps:
+	- First, we need to find out how many buses are needed to carry 45 students.
+	- Each bus can carry 15 students.
+	- To find the number of buses needed, we divide the total number of students by the number of students each bus can carry.
+	- 45 ÷ 15 = 3
+
+
+>> Final Actual Result: 3 buses
+>> Final Model Result : 3 buses
+
+
+-----
+
+
+>> Sample #10
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 9,
+  "unit": "papers",
+  "solving_steps": [
+    "The teacher has 36 exam papers.",
+    "She grades 12 papers before lunch, so she has 36 - 12 = 24 papers left.",
+    "Then she grades 15 papers after lunch, so she has 24 - 15 = 9 papers left."
+  ]
+}
+
+>> Problem:
+A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+>> Model Reasoning Steps:
+	- The teacher has 36 exam papers.
+	- She grades 12 papers before lunch, so she has 36 - 12 = 24 papers left.
+	- Then she grades 15 papers after lunch, so she has 24 - 15 = 9 papers left.
+
+
+>> Final Actual Result: 9 papers
+>> Final Model Result : 9 papers
+
+
+-----
+
+
+>> Sample #11
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 65,
+  "unit": "percent",
+  "solving_steps": [
+    "The phone battery was initially at 80 percent.",
+    "It lost 25 percent, so we subtract 25 from 80: 80 - 25 = 55 percent.",
+    "Then it gained 10 percent, so we add 10 to 55: 55 + 10 = 65 percent."
+  ]
+}
+
+>> Problem:
+A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+>> Model Reasoning Steps:
+	- The phone battery was initially at 80 percent.
+	- It lost 25 percent, so we subtract 25 from 80: 80 - 25 = 55 percent.
+	- Then it gained 10 percent, so we add 10 to 55: 55 + 10 = 65 percent.
+
+
+>> Final Actual Result: 65 percent
+>> Final Model Result : 65 percent
+
+
+-----
+
+
+>> Sample #12
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": [
+    "The car park initially had 40 cars.",
+    "12 cars left, so we subtract 12 from 40: 40 - 12 = 28 cars.",
+    "7 cars entered, so we add 7 to 28: 28 + 7 = 35 cars."
+  ]
+}
+
+>> Problem:
+A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+>> Model Reasoning Steps:
+	- The car park initially had 40 cars.
+	- 12 cars left, so we subtract 12 from 40: 40 - 12 = 28 cars.
+	- 7 cars entered, so we add 7 to 28: 28 + 7 = 35 cars.
+
+
+>> Final Actual Result: 35 cars
+>> Final Model Result : 35 cars
+
+
+-----
+
+
+>> Sample #13
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 17,
+  "unit": "eggs",
+  "solving_steps": ["The farmer collected 60 eggs.", "He sold 35 eggs, so he has 60 - 35 = 25 eggs left.", "He used 8 eggs at home, so he has 25 - 8 = 17 eggs left."]
+}
+
+>> Problem:
+A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+>> Model Reasoning Steps:
+	- The farmer collected 60 eggs.
+	- He sold 35 eggs, so he has 60 - 35 = 25 eggs left.
+	- He used 8 eggs at home, so he has 25 - 8 = 17 eggs left.
+
+
+>> Final Actual Result: 17 eggs
+>> Final Model Result : 17 eggs
+
+
+-----
+
+
+>> Sample #14
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+
+Solution:
+
+
+>> Pure Model Output:
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "The restaurant prepared 90 meals.",
+    "By noon, 48 meals were sold.",
+    "In the afternoon, 27 more meals were sold.",
+    "Total meals sold is 48 + 27 = 75.",
+    "Meals remaining is 90 - 75 = 15."
+  ]
+}
+
+>> Problem:
+A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+>> Model Reasoning Steps:
+	- The restaurant prepared 90 meals.
+	- By noon, 48 meals were sold.
+	- In the afternoon, 27 more meals were sold.
+	- Total meals sold is 48 + 27 = 75.
+	- Meals remaining is 90 - 75 = 15.
+
+
+>> Final Actual Result: 15 meals
+>> Final Model Result : 15 meals
+
+
+-----
+
+
+====> Testing Combination: qwen/qwen3-32b | Prompt: v1 | CFG: {'temperature': 0, 'max_tokens': 256} <====
+
+>> Sample #1
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Sara starts with 30 pounds. Her brother gives her 3 more, so that's 30 + 3. Then she spends 5 pounds on bread. So I need to add the 3 to the original 30 first, which makes 33. Then subtract the 5 she spent. 33 minus 5 is 28. So the answer should be 28 pounds.
+
+Wait, let me check again. Starting amount is 30. Adding 3 from brother: 30 + 3 = 33. Then buying bread costs 5, so 33 - 5 = 28. Yep, that's right. The steps are straightforward: add the money received, subtract the money spent. The unit is pounds throughout. So the final amount is 28 pounds.
+</think>
+
+{
+  "answer": 28,
+  "unit": "pound",
+  "solving_steps": [
+    "Start with Sara's initial amount: 30 pounds.",
+    "Add the 3 pounds given by her brother: 30 + 3 = 33 pounds.",
+    "Subtract the 5 pounds spent on bread
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 28,
+  "unit": "pound",
+  "solving_steps": [
+    "Start with Sara's initial amount: 30 pounds.",
+    "Add the 3 pounds given by her brother: 30 + 3 = 33 pounds.",
+    "Subtract the 5 pounds spent on bread
+
+>> Sample #2
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Omar starts with 12 pencils. Then he gives 4 to his friend. So I need to subtract those 4 from the original 12. That would be 12 minus 4, which is 8. Then his teacher gives him 7 more pencils. So I add those 7 to the 8 he has left. 8 plus 7 equals 15. So Omar should have 15 pencils now. Let me check that again. 12 - 4 = 8, then 8 +7 =15. Yep, that seems right.
+</think>
+
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": [
+    "Start with the initial number of pencils: 12.",
+    "Subtract the pencils given to the friend: 12 - 4 = 8.",
+    "Add the pencils received from the teacher: 8 + 7 = 15."
+  ]
+}
+
+>> Problem:
+Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+>> Model Reasoning Steps:
+	- Start with the initial number of pencils: 12.
+	- Subtract the pencils given to the friend: 12 - 4 = 8.
+	- Add the pencils received from the teacher: 8 + 7 = 15.
+
+
+>> Final Actual Result: 15 pencils
+>> Final Model Result : 15 pencils
+
+
+-----
+
+
+>> Sample #3
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a bus with passengers getting on and off. So, the bus starts with 18 passengers. Then at the first stop, 5 people get off and 9 get on. I need to find out how many are on the bus now.
+
+First, I should subtract the number of passengers who got off from the initial number. So 18 minus 5. That would be 13. Then, add the 9 passengers who got on. 13 plus 9 equals 22. Wait, is that right? Let me check again. Starting with 18, subtract 5: 18 - 5 = 13. Then add 9: 13 + 9 = 22. Yeah, that seems correct. So the final answer should be 22 passengers. The unit here is passengers, so the unit is "passengers". The steps are subtracting the ones who left and adding those who boarded. That's straightforward.
+</think>
+
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "Start with the initial number of passengers: 18.",
+    "
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "Start with the initial number of passengers: 18.",
+    "
+
+>> Sample #4
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem says Mona baked 24 cookies and packed them equally into 6 small boxes. I need to find out how many cookies are in each box.
+
+First, I remember that when you divide something equally, you use division. So if there are 24 cookies and 6 boxes, each box gets the same number. So I should divide 24 by 6. Let me check that. 24 divided by 6 is 4. That makes sense because 6 times 4 is 24. So each box has 4 cookies. I think that's the answer. Let me just make sure there's no trick here. The problem says "equally into 6 boxes," so division is definitely the right operation. Yep, 24 divided by 6 is 4. So the answer should be 4 cookies per box.
+</think>
+
+{
+  "answer": 4,
+  "unit": "cookies",
+  "solving_steps": [
+    "Divide the total number of cookies by the number of boxes: 24 ÷ 6 = 4",
+    "Each box contains 4 cookies"
+  ]
+}
+
+>> Problem:
+Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+>> Model Reasoning Steps:
+	- Divide the total number of cookies by the number of boxes: 24 ÷ 6 = 4
+	- Each box contains 4 cookies
+
+
+>> Final Actual Result: 4 cookies
+>> Final Model Result : 4 cookies
+
+
+-----
+
+
+>> Sample #5
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about calculating the change Ali should get after buying notebooks. The notebooks are 8 pounds each, and he bought 3 of them. He paid with 30 pounds. So, first, I need to find out the total cost of the notebooks. That would be 8 pounds multiplied by 3 notebooks. Let me calculate that: 8 times 3 is 24. So the total cost is 24 pounds. Now, he gave 30 pounds, so the change should be the amount he paid minus the total cost. That's 30 minus 24, which equals 6. So the change should be 6 pounds. Let me just check the steps again to make sure I didn't make a mistake. Multiplying 8 by 3 gives 24, subtracting that from 30 gives 6. Yep, that seems right.
+</think>
+
+{
+  "answer": 6,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the total cost of 3 notebooks: 8 pounds/notebook * 3 notebooks = 24 pounds.",
+    "Subtract the total cost from the amount paid:
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 6,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the total cost of 3 notebooks: 8 pounds/notebook * 3 notebooks = 24 pounds.",
+    "Subtract the total cost from the amount paid:
+
+>> Sample #6
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a family buying cinema tickets and snacks. I need to find the total amount they paid.
+
+First, there are 4 cinema tickets, each costing 50 pounds. So I should calculate the total cost for the tickets. Multiplying 4 by 50 gives 200 pounds. Then they bought snacks for 80 pounds. To get the total, I need to add the cost of the tickets and the snacks together. Adding 200 and 80 gives 280. So the total amount they paid is 280 pounds. The unit here is pounds, which is the currency mentioned. Let me check again: 4 tickets at 50 each is 200, plus 80 for snacks. Yep, 280. That makes sense.
+</think>
+
+{
+  "answer": 280,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the total cost of cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds",
+    "Add the cost of snacks: 200 pounds + 80 pounds = 280 pounds
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 280,
+  "unit": "pounds",
+  "solving_steps": [
+    "Calculate the total cost of cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds",
+    "Add the cost of snacks: 200 pounds + 80 pounds = 280 pounds
+
+>> Sample #7
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a water bottle that starts with 2 liters. Ahmed drinks some water in the morning and evening, and we need to find out how much is left in milliliters.
+
+First, I need to convert the initial amount from liters to milliliters because the amounts he drank are given in milliliters. I remember that 1 liter is 1000 milliliters, so 2 liters would be 2 times 1000, which is 2000 milliliters. Got that down.
+
+Next, Ahmed drank 500 milliliters in the morning and 700 in the evening. So I need to add those two amounts together to find the total he drank. 500 plus 700 is 1200 milliliters. 
+
+Now, subtract the total amount he drank from the initial 2000 milliliters. So 2000 minus 1200 equals 800. That should be the remaining water in milliliters. Let me double-check the conversions and calculations to make sure I didn't make a mistake. Yep, 2 liters is definitely 20
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+<think>
+Okay, let's see. The problem is about a water bottle that starts with 2 liters. Ahmed drinks some water in the morning and evening, and we need to find out how much is left in milliliters.
+
+First, I need to convert the initial amount from liters to milliliters because the amounts he drank are given in milliliters. I remember that 1 liter is 1000 milliliters, so 2 liters would be 2 times 1000, which is 2000 milliliters. Got that down.
+
+Next, Ahmed drank 500 milliliters in the morning and 700 in the evening. So I need to add those two amounts together to find the total he drank. 500 plus 700 is 1200 milliliters. 
+
+Now, subtract the total amount he drank from the initial 2000 milliliters. So 2000 minus 1200 equals 800. That should be the remaining water in milliliters. Let me double-check the conversions and calculations to make sure I didn't make a mistake. Yep, 2 liters is definitely 20
+
+>> Sample #8
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a runner who wants to run a total of 10 kilometers. He already ran some distance before and after breakfast, and we need to find out how much is left.
+
+First, I need to figure out how much he has already run. The problem says he ran 3 kilometers before breakfast and 4 kilometers after. So, adding those together: 3 + 4 equals 7 kilometers. 
+
+Then, the total planned distance is 10 km. If he's already done 7 km, subtracting that from 10 gives the remaining distance. So 10 minus 7 is 3. That means he has 3 kilometers left to reach his goal.
+
+Let me check again. 3 before breakfast, 4 after. Total done is 7. 10 total minus 7 done equals 3 left. Yep, that makes sense. The answer should be 3 kilometers.
+</think>
+
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "Calculate the total distance already run: 3 km (before breakfast) + 4 km (after breakfast) = 7 km.",
+    "Subtract
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "Calculate the total distance already run: 3 km (before breakfast) + 4 km (after breakfast) = 7 km.",
+    "Subtract
+
+>> Sample #9
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about figuring out how many buses are needed for a school trip with 45 students, where each bus can carry 15 students. Hmm, right. So first, I need to determine how many times 15 goes into 45. That's basically division. Let me check: 45 divided by 15 equals 3. So that would mean 3 buses. Wait, but what if there's a remainder? Like, if the number of students wasn't a multiple of 15, we'd need an extra bus for the remaining students. But in this case, 45 divided by 15 is exactly 3. So no remainder. Therefore, 3 buses are needed. Let me just make sure I didn't make a mistake in the division. 15 times 3 is 45, yes. So the answer should be 3 buses.
+</think>
+
+{
+  "answer": 3,
+  "unit": "buses",
+  "solving_steps": [
+    "Divide the total number of students by the capacity of each bus: 45 ÷ 15 = 3.",
+    "Since there is no remainder,
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 3,
+  "unit": "buses",
+  "solving_steps": [
+    "Divide the total number of students by the capacity of each bus: 45 ÷ 15 = 3.",
+    "Since there is no remainder,
+
+>> Sample #10
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The teacher starts with 36 exam papers. She grades some before and after lunch. I need to find out how many are left ungraded.
+
+First, she grades 12 papers before lunch. So I subtract those from the total. 36 minus 12 is 24. Then, after lunch, she grades 15 more. So I subtract 15 from the remaining 24. 24 minus 15 equals 9. So there should be 9 papers left. Let me check the math again. 12 plus 15 is 27, and 36 minus 27 is 9. Yep, that makes sense. The answer is 9.
+</think>
+
+{
+  "answer": 9,
+  "unit": "papers",
+  "solving_steps": [
+    "Start with the total number of papers: 36.",
+    "Subtract the 12 papers graded before lunch: 36 - 12 = 24.",
+    "Subtract the 15 papers graded after lunch: 24 - 15 = 9."
+  ]
+}
+
+>> Problem:
+A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+>> Model Reasoning Steps:
+	- Start with the total number of papers: 36.
+	- Subtract the 12 papers graded before lunch: 36 - 12 = 24.
+	- Subtract the 15 papers graded after lunch: 24 - 15 = 9.
+
+
+>> Final Actual Result: 9 papers
+>> Final Model Result : 9 papers
+
+
+-----
+
+
+>> Sample #11
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The phone battery starts at 80%. Then it loses 25% while playing a game. Wait, does that mean 25% of the original 80% or 25% of the current battery? Hmm, probably 25% of the current level. So 25% of 80 is 20, right? So 80 minus 20 would be 60%. Then it gains 10% while charging. Again, 10% of what? If it's 10% of the current 60%, that's 6, so 60 + 6 = 66%. But wait, sometimes when people say "gained 10%", they might mean adding 10 percentage points. Wait, the problem says "gained 10 percent while charging." So probably it's 10% of the current battery. So 10% of 60 is 6, making it 66%. So the final answer should be 66%.
+</think>
+
+{
+  "answer": 66,
+  "unit": "%",
+  "solving_steps": [
+    "Start
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 66,
+  "unit": "%",
+  "solving_steps": [
+    "Start
+
+>> Sample #12
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a car park that starts with 40 cars. Then, during the morning, 12 cars leave and 7 cars enter. I need to find out how many cars are there now.
+
+First, I should figure out how many cars are left after some leave. If there were 40 and 12 left, I subtract 12 from 40. So 40 minus 12 is 28. That means after the cars left, there are 28 cars remaining.
+
+Next, 7 cars enter the car park. So I need to add those 7 to the 28 that were already there. Adding 7 to 28 gives me 35. 
+
+Wait, let me check that again. 40 minus 12 is definitely 28. Then 28 plus 7... yes, that's 35. So the total number of cars now should be 35. 
+
+I think that's it. The steps are subtracting the cars that left and then adding the ones that came in. The answer should be 35 cars.
+</think>
+
+{
+  "answer": 35,
+  "
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 35,
+  "
+
+>> Sample #13
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The farmer started with 60 eggs. He sold 35, so I need to subtract that from the total. Then he used 8 eggs at home, so I have to subtract those too. Let me do the math step by step.
+
+First, 60 minus 35. That would be 25 eggs left after selling. Then, subtract the 8 eggs he used. 25 minus 8 is 17. So, there should be 17 eggs left. Let me check again: 60 - 35 = 25, then 25 - 8 = 17. Yep, that seems right. The answer is 17 eggs.
+</think>
+
+{
+  "answer": 17,
+  "unit": "eggs",
+  "solving_steps": [
+    "Start with the total number of eggs collected: 60 eggs.",
+    "Subtract the number of eggs sold: 60 - 35 = 25 eggs.",
+    "Subtract the number of eggs used at home: 25 - 8 = 17 eggs."
+  ]
+}
+
+>> Problem:
+A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+>> Model Reasoning Steps:
+	- Start with the total number of eggs collected: 60 eggs.
+	- Subtract the number of eggs sold: 60 - 35 = 25 eggs.
+	- Subtract the number of eggs used at home: 25 - 8 = 17 eggs.
+
+
+>> Final Actual Result: 17 eggs
+>> Final Model Result : 17 eggs
+
+
+-----
+
+
+>> Sample #14
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- return only a valid json schema
+
+
+Solve the following problem: A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The restaurant started with 90 meals. They sold 48 by noon, so I need to subtract that from the total. Then in the afternoon, they sold another 27. So I'll subtract that too. Let me do the math step by step.
+
+First, 90 minus 48. Hmm, 90 minus 40 is 50, and then minus 8 more is 42. So after noon, there are 42 meals left. Then in the afternoon, they sold 27. So 42 minus 27. Let's break that down: 42 minus 20 is 22, and then minus 7 more is 15. So the remaining meals should be 15. Let me check again to make sure I didn't make a mistake. 48 plus 27 is 75 total sold. 90 minus 75 is indeed 15. Yep, that seems right.
+</think>
+
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "Start with the total number of meals prepared: 90
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "Start with the total number of meals prepared: 90
+
+====> Testing Combination: qwen/qwen3-32b | Prompt: v2 | CFG: {'temperature': 0, 'max_tokens': 256} <====
+
+>> Sample #1
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Sara starts with 30 pounds. Her brother gives her 3 more, so that's 30 + 3. Then she spends 5 pounds on bread. So I need to add the 3 to the original 30 first, which makes 33. Then subtract the 5 she spent. 33 minus 5 is 28. So the answer should be 28 pounds.
+
+Wait, let me check again. Starting amount is 30. Adding 3 from brother: 30 + 3 = 33. Then buying bread costs 5, so 33 - 5 = 28. Yep, that's right. The unit is pounds, so the answer is 28 pounds. No percentages here, just straightforward addition and subtraction.
+</think>
+
+{
+  "answer": 28,
+  "unit": "pound",
+  "solving_steps": [
+    "Start with Sara's initial amount: 30 pounds.",
+    "Add the 3 pounds given by her brother: 30 + 3 = 33 pounds.",
+    "Subtract the 5 pounds spent on bread: 33 - 5
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 28,
+  "unit": "pound",
+  "solving_steps": [
+    "Start with Sara's initial amount: 30 pounds.",
+    "Add the 3 pounds given by her brother: 30 + 3 = 33 pounds.",
+    "Subtract the 5 pounds spent on bread: 33 - 5
+
+>> Sample #2
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Omar starts with 12 pencils. Then he gives 4 to his friend. So I need to subtract those 4 from the original 12. That would be 12 minus 4, which is 8. Then his teacher gives him 7 more pencils. So I add those 7 to the 8 he has left. 8 plus 7 equals 15. So Omar should have 15 pencils now. Let me check that again. 12 - 4 = 8, then 8 +7 =15. Yep, that seems right. The steps are subtraction first, then addition. The units here are just pencils, so the answer is 15 pencils.
+</think>
+
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": [
+    "Start with the initial number of pencils: 12.",
+    "Subtract the 4 pencils given to the friend: 12 - 4 = 8.",
+    "Add the 7 pencils received from the teacher: 8 + 7 = 15."
+  ]
+}
+
+>> Problem:
+Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+>> Model Reasoning Steps:
+	- Start with the initial number of pencils: 12.
+	- Subtract the 4 pencils given to the friend: 12 - 4 = 8.
+	- Add the 7 pencils received from the teacher: 8 + 7 = 15.
+
+
+>> Final Actual Result: 15 pencils
+>> Final Model Result : 15 pencils
+
+
+-----
+
+
+>> Sample #3
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a bus with passengers getting on and off. So, the bus starts with 18 passengers. Then at the first stop, 5 get off and 9 get on. I need to find out how many are on the bus now.
+
+First, I should subtract the passengers who got off. So 18 minus 5. That would be 13. Then, add the ones who got on, which is 9. So 13 plus 9. Let me do that math. 13 plus 9 is 22. Wait, is that right? Let me check again. 18 minus 5 is 13, then adding 9 gives 22. Yeah, that seems correct. So the answer should be 22 passengers. The unit here is just "passengers" since it's a count. No percentages involved here. The steps are subtract the ones who left and add the ones who boarded. That's straightforward.
+</think>
+
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "Start with the initial number of passengers: 18.",
+    "Subtract
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": [
+    "Start with the initial number of passengers: 18.",
+    "Subtract
+
+>> Sample #4
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Mona has 24 cookies and she wants to put them into 6 boxes equally. So, I need to figure out how many cookies go into each box.
+
+Hmm, if there are 24 cookies total and 6 boxes, I should divide the total number by the number of boxes. That makes sense because dividing equally means each box gets the same amount. So 24 divided by 6. Let me do that calculation. 24 divided by 6 is 4. So each box would have 4 cookies. 
+
+Wait, let me check again. If each of the 6 boxes has 4 cookies, then 6 times 4 is 24. Yeah, that adds up to the total she baked. So the answer should be 4 cookies per box. I think that's right. No steps missed here. Just a simple division problem.
+</think>
+
+{
+  "answer": 4,
+  "unit": "cookies",
+  "solving_steps": [
+    "Total cookies baked: 24",
+    "Number of boxes: 6",
+    "Divide total cookies by number of boxes: 24 ÷ 6 = 4"
+  ]
+}
+
+>> Problem:
+Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+>> Model Reasoning Steps:
+	- Total cookies baked: 24
+	- Number of boxes: 6
+	- Divide total cookies by number of boxes: 24 ÷ 6 = 4
+
+
+>> Final Actual Result: 4 cookies
+>> Final Model Result : 4 cookies
+
+
+-----
+
+
+>> Sample #5
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about Ali buying notebooks and needing to find out his change. The notebooks are 8 pounds each, he bought 3, and paid with 30 pounds. So first, I need to calculate the total cost of the notebooks. Each is 8 pounds, so 3 times 8. That's 24 pounds. Then, he paid with 30 pounds, so the change would be 30 minus 24. Let me do that subtraction: 30 - 24 equals 6. So the change should be 6 pounds. Let me check again. 3 notebooks at 8 each is 24. 30 take away 24 is 6. Yep, that seems right. No units missing here, all in pounds. The answer is 6 pounds.
+</think>
+
+{
+  "answer": 6,
+  "unit": "pound",
+  "solving_steps": [
+    "Calculate the total cost of 3 notebooks: 3 * 8 = 24 pounds.",
+    "Subtract the total cost from the amount paid: 30 - 24 = 6 pounds."
+  ]
+}
+
+>> Problem:
+A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+>> Model Reasoning Steps:
+	- Calculate the total cost of 3 notebooks: 3 * 8 = 24 pounds.
+	- Subtract the total cost from the amount paid: 30 - 24 = 6 pounds.
+
+
+>> Final Actual Result: 6 pounds
+>> Final Model Result : 6 pound
+
+
+-----
+
+
+>> Sample #6
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The family bought 4 cinema tickets, each costing 50 pounds. So first, I need to calculate the total cost of the tickets. Multiplying 4 by 50 gives 200 pounds. Then they bought snacks for 80 pounds. To find the total amount paid, I add the cost of the tickets and the snacks together. So 200 plus 80 equals 280. The unit here is pounds. Let me check again: 4 tickets at 50 each is 200, plus 80 for snacks. Yep, 280 pounds total. No percentages involved here, just straightforward addition.
+</think>
+
+{
+  "answer": 280,
+  "unit": "pound",
+  "solving_steps": [
+    "Calculate the total cost of cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds.",
+    "Add the cost of snacks: 200 pounds + 80 pounds = 280 pounds."
+  ]
+}
+
+>> Problem:
+A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+>> Model Reasoning Steps:
+	- Calculate the total cost of cinema tickets: 4 tickets * 50 pounds/ticket = 200 pounds.
+	- Add the cost of snacks: 200 pounds + 80 pounds = 280 pounds.
+
+
+>> Final Actual Result: 280 pounds
+>> Final Model Result : 280 pound
+
+
+-----
+
+
+>> Sample #7
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a water bottle that starts with 2 liters. Ahmed drinks some water in the morning and evening, and we need to find out how much is left in milliliters.
+
+First, I need to convert the initial amount from liters to milliliters because the amounts he drank are given in milliliters. I remember that 1 liter is 1000 milliliters. So 2 liters would be 2 times 1000, which is 2000 milliliters. Got that down.
+
+Next, he drank 500 milliliters in the morning and 700 in the evening. I should add those two amounts together to find the total he drank. 500 plus 700 is 1200 milliliters. 
+
+Now, subtract the total amount he drank from the initial amount. So 2000 minus 1200 equals 800 milliliters. That should be the remaining water. Let me double-check the conversions and calculations to make sure I didn't make a mistake. Yep, 2 liters is definitely 2000 ml, and adding 500
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+<think>
+Okay, let's see. The problem is about a water bottle that starts with 2 liters. Ahmed drinks some water in the morning and evening, and we need to find out how much is left in milliliters.
+
+First, I need to convert the initial amount from liters to milliliters because the amounts he drank are given in milliliters. I remember that 1 liter is 1000 milliliters. So 2 liters would be 2 times 1000, which is 2000 milliliters. Got that down.
+
+Next, he drank 500 milliliters in the morning and 700 in the evening. I should add those two amounts together to find the total he drank. 500 plus 700 is 1200 milliliters. 
+
+Now, subtract the total amount he drank from the initial amount. So 2000 minus 1200 equals 800 milliliters. That should be the remaining water. Let me double-check the conversions and calculations to make sure I didn't make a mistake. Yep, 2 liters is definitely 2000 ml, and adding 500
+
+>> Sample #8
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a runner who planned to run 10 kilometers total. He already ran some before and after breakfast, and we need to find out how much is left.
+
+First, I need to add up the distances he has already run. Before breakfast, he ran 3 km, and after breakfast, 4 km. So 3 plus 4 equals 7 kilometers. 
+
+Then, subtract that total from his original plan. The total plan was 10 km, so 10 minus 7 gives 3 km left. 
+
+Wait, that seems straightforward. Let me check again. 3 + 4 is definitely 7. 10 - 7 is 3. Yeah, that's right. So the answer should be 3 kilometers remaining.
+</think>
+
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "Calculate the total distance already run: 3 km (before breakfast) + 4 km (after breakfast) = 7 km.",
+    "Subtract the distance already run from the planned total: 10 km (planned) - 7 km (run) = 3 km remaining."
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "Calculate the total distance already run: 3 km (before breakfast) + 4 km (after breakfast) = 7 km.",
+    "Subtract the distance already run from the planned total: 10 km (planned) - 7 km (run) = 3 km remaining."
+
+>> Sample #9
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about figuring out how many buses are needed for a school trip with 45 students, where each bus can carry 15 students. Hmm, right. So first, I need to divide the total number of students by the capacity of each bus. That makes sense because each bus can take 15 students, so dividing 45 by 15 should give the number of buses required.
+
+Wait, 45 divided by 15 is 3. So, does that mean 3 buses? Let me double-check. If each bus takes 15 students, then 3 buses would hold 15 x 3 = 45 students. Exactly, that's all the students. So there's no remainder here, which means we don't need an extra bus. Sometimes when you divide, if there's a remainder, you have to round up, but in this case, it's a whole number. So the answer should be 3 buses. I think that's it. The steps are dividing total students by bus capacity and confirming there's no remainder. Yep, that seems right.
+</think>
+
+{
+  "answer": 3,
+  "unit": "buses",
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 3,
+  "unit": "buses",
+
+>> Sample #10
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The teacher starts with 36 exam papers. She grades some before and after lunch. I need to find out how many are left ungraded.
+
+First, she grades 12 papers before lunch. So I subtract those from the total. 36 minus 12 is 24. Then, after lunch, she grades 15 more. So I subtract 15 from the remaining 24. 24 minus 15 equals 9. That should be the number of ungraded papers left. Let me check the math again to be sure. 12 plus 15 is 27, and 36 minus 27 is 9. Yep, that makes sense. The answer is 9 papers still ungraded.
+</think>
+
+{
+  "answer": 9,
+  "unit": "papers",
+  "solving_steps": [
+    "Start with the total number of papers: 36.",
+    "Subtract the 12 papers graded before lunch: 36 - 12 = 24.",
+    "Subtract the 15 papers graded after lunch: 24 - 15 = 9."
+  ]
+}
+
+>> Problem:
+A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+>> Model Reasoning Steps:
+	- Start with the total number of papers: 36.
+	- Subtract the 12 papers graded before lunch: 36 - 12 = 24.
+	- Subtract the 15 papers graded after lunch: 24 - 15 = 9.
+
+
+>> Final Actual Result: 9 papers
+>> Final Model Result : 9 papers
+
+
+-----
+
+
+>> Sample #11
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The phone battery starts at 80%. Then it loses 25% while playing a game. Wait, does that mean 25% of the original 80% or 25% of the current battery? Hmm, usually when something loses a percentage, it's a percentage of the current amount. So if it's at 80% and loses 25%, that's 25% of 80. Let me calculate that. 25% of 80 is 20, so subtracting that from 80 gives 60%. Then, it gains 10% while charging. Again, is that 10% of the current 60% or 10% of the original 80%? Probably 10% of the current amount. So 10% of 60 is 6, so adding that to 60 gives 66%. So the final battery percentage is 66%. Let me double-check. Starting at 80, minus 25% (which is 20) equals 60. Then plus 10% (which is 6) equals
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+<think>
+Okay, let's see. The phone battery starts at 80%. Then it loses 25% while playing a game. Wait, does that mean 25% of the original 80% or 25% of the current battery? Hmm, usually when something loses a percentage, it's a percentage of the current amount. So if it's at 80% and loses 25%, that's 25% of 80. Let me calculate that. 25% of 80 is 20, so subtracting that from 80 gives 60%. Then, it gains 10% while charging. Again, is that 10% of the current 60% or 10% of the original 80%? Probably 10% of the current amount. So 10% of 60 is 6, so adding that to 60 gives 66%. So the final battery percentage is 66%. Let me double-check. Starting at 80, minus 25% (which is 20) equals 60. Then plus 10% (which is 6) equals
+
+>> Sample #12
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a car park that starts with 40 cars. Then, during the morning, 12 cars leave and 7 cars enter. I need to find out how many cars are there now.
+
+First, I should subtract the number of cars that left from the initial number. So 40 minus 12. That would give me 28 cars remaining after some left. Then, add the 7 cars that entered. So 28 plus 7 equals 35. That should be the total number of cars now. Let me check again: start with 40, subtract 12 (40-12=28), add 7 (28+7=35). Yep, that seems right. The answer is 35 cars.
+</think>
+
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": [
+    "Start with the initial number of cars: 40.",
+    "Subtract the number of cars that left: 40 - 12 = 28.",
+    "Add the number of cars that entered: 28 + 7 = 35."
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": [
+    "Start with the initial number of cars: 40.",
+    "Subtract the number of cars that left: 40 - 12 = 28.",
+    "Add the number of cars that entered: 28 + 7 = 35."
+
+>> Sample #13
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The farmer collected 60 eggs. Then he sold 35 and used 8 at home. I need to find out how many are left.
+
+First, I should add the number of eggs he sold and used. So 35 plus 8. That equals 43. Then subtract that total from the original 60 eggs. 60 minus 43 is 17. So there should be 17 eggs left. Let me check again: 35 sold plus 8 used is 43. 60 minus 43 is definitely 17. Yep, that makes sense.
+</think>
+
+{
+  "answer": 17,
+  "unit": "eggs",
+  "solving_steps": [
+    "Start with the total number of eggs collected: 60 eggs.",
+    "Add the number of eggs sold and used: 35 + 8 = 43 eggs.",
+    "Subtract the total used/sold from the initial amount: 60 - 43 = 17 eggs."
+  ]
+}
+
+>> Problem:
+A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+>> Model Reasoning Steps:
+	- Start with the total number of eggs collected: 60 eggs.
+	- Add the number of eggs sold and used: 35 + 8 = 43 eggs.
+	- Subtract the total used/sold from the initial amount: 60 - 43 = 17 eggs.
+
+
+>> Final Actual Result: 17 eggs
+>> Final Model Result : 17 eggs
+
+
+-----
+
+
+>> Sample #14
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Solve the following problem: A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The restaurant started with 90 meals. They sold 48 by noon and then 27 more in the afternoon. I need to find out how many are left.
+
+First, I should add the number of meals sold in the morning and afternoon. So 48 plus 27. Let me do that: 48 + 27 equals 75. 
+
+Then, subtract the total sold from the original number of meals. That would be 90 minus 75. 90 - 75 is 15. 
+
+So, there are 15 meals remaining. The unit here is just "meals" since it's a count. Let me check the steps again to make sure. Yep, adding the sold meals and subtracting from the total gives the right answer. No percentages involved here, so the unit is straightforward.
+</think>
+
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "Calculate total meals sold: 48 (noon) + 27 (afternoon) = 75 meals.",
+    "Subtract total sold from prepared meals: 90 - 7
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 15,
+  "unit": "meals",
+  "solving_steps": [
+    "Calculate total meals sold: 48 (noon) + 27 (afternoon) = 75 meals.",
+    "Subtract total sold from prepared meals: 90 - 7
+
+====> Testing Combination: qwen/qwen3-32b | Prompt: one_shot | CFG: {'temperature': 0, 'max_tokens': 256} <====
+
+>> Sample #1
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Sara starts with 30 pounds. Her brother gives her 3 more, so that's 30 + 3 = 33. Then she buys bread for 5 pounds, so subtract 5 from 33. That would be 33 - 5 = 28. So she has 28 pounds left. Let me check again: 30 +3 is 33, minus 5 is 28. Yep, that seems right. The steps are adding the brother's contribution and then subtracting the cost of the bread.
+</think>
+
+{
+  "answer": 28,
+  "unit": "pounds",
+  "solving_steps": [
+    "Sara starts with 30 pounds.",
+    "Her brother gives her 3 pounds, so she now has 30 + 3 = 33 pounds.",
+    "She spends 5 pounds on bread, leaving her with 33 - 5 = 28 pounds."
+  ]
+}
+
+>> Problem:
+Sara had 30 pounds. Her brother gave her another 3 pounds. After that, she bought bread for 5 pounds. How much money does Sara have now?
+
+>> Model Reasoning Steps:
+	- Sara starts with 30 pounds.
+	- Her brother gives her 3 pounds, so she now has 30 + 3 = 33 pounds.
+	- She spends 5 pounds on bread, leaving her with 33 - 5 = 28 pounds.
+
+
+>> Final Actual Result: 28 pounds
+>> Final Model Result : 28 pounds
+
+
+-----
+
+
+>> Sample #2
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: Omar had 12 pencils. He gave 4 pencils to his friend, then his teacher gave him 7 more pencils. How many pencils does Omar have now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about Omar and his pencils. He starts with 12 pencils. Then he gives 4 to his friend. After that, his teacher gives him 7 more. I need to find out how many pencils he has now.
+
+First, I'll subtract the 4 pencils he gave away from his original 12. So 12 minus 4 is 8. That leaves him with 8 pencils. Then, his teacher gives him 7 more. Adding those to the 8 he has, 8 plus 7 equals 15. So the answer should be 15 pencils. Let me check again to make sure I didn't make a mistake. Starting with 12, subtract 4 is 8, then add 7 is 15. Yep, that seems right.
+</think>
+
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": ["Omar starts with 12 pencils.", "He gives 4 pencils to his friend, leaving him with 12 - 4 = 8 pencils.", "His teacher gives him 7 more pencils, so he now has 8 + 7 =
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 15,
+  "unit": "pencils",
+  "solving_steps": ["Omar starts with 12 pencils.", "He gives 4 pencils to his friend, leaving him with 12 - 4 = 8 pencils.", "His teacher gives him 7 more pencils, so he now has 8 + 7 =
+
+>> Sample #3
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a bus with passengers getting on and off. So, the bus starts with 18 passengers. Then at the first stop, 5 get off and 9 get on. I need to find out how many are on the bus now.
+
+First, I'll subtract the passengers who got off. Starting with 18, subtract 5. That would be 18 - 5 = 13. Then, add the 9 passengers who got on. So 13 + 9. Let me do that math. 13 plus 9 is 22. Wait, is that right? Let me check again. 18 minus 5 is 13, then adding 9 gives 22. Yeah, that seems correct. So the answer should be 22 passengers.
+</think>
+
+{
+  "answer": 22,
+  "unit": "passengers",
+  "solving_steps": ["The bus starts with 18 passengers.", "5 passengers get off: 18 - 5 = 13 passengers.", "9 passengers get on: 13 + 9 = 22 passengers."]
+}
+
+>> Problem:
+A bus had 18 passengers. At the first stop, 5 passengers got off and 9 passengers got on. How many passengers are on the bus now?
+
+>> Model Reasoning Steps:
+	- The bus starts with 18 passengers.
+	- 5 passengers get off: 18 - 5 = 13 passengers.
+	- 9 passengers get on: 13 + 9 = 22 passengers.
+
+
+>> Final Actual Result: 22 passengers
+>> Final Model Result : 22 passengers
+
+
+-----
+
+
+>> Sample #4
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. Mona has 24 cookies and she wants to put them equally into 6 boxes. So, I need to divide the total number of cookies by the number of boxes. That would be 24 divided by 6. Let me check that. 6 times 4 is 24, so each box should have 4 cookies. Yeah, that makes sense. The steps are straightforward: start with the total, divide by the number of boxes, and the result is the number per box.
+</think>
+
+{
+  "answer": 4,
+  "unit": "cookies",
+  "solving_steps": ["Mona has 24 cookies in total.", "She divides them equally into 6 boxes: 24 ÷ 6 = 4.", "Each box contains 4 cookies."]
+}
+
+>> Problem:
+Mona baked 24 cookies. She packed them equally into 6 small boxes. How many cookies are in each box?
+
+>> Model Reasoning Steps:
+	- Mona has 24 cookies in total.
+	- She divides them equally into 6 boxes: 24 ÷ 6 = 4.
+	- Each box contains 4 cookies.
+
+
+>> Final Actual Result: 4 cookies
+>> Final Model Result : 4 cookies
+
+
+-----
+
+
+>> Sample #5
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A shop sells notebooks for 8 pounds each. Ali bought 3 notebooks and paid with 30 pounds. How much change should he get?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about Ali buying notebooks and needing to find out his change. So, first, each notebook costs 8 pounds. He bought 3 of them. To find the total cost, I need to multiply the price per notebook by the number of notebooks. That would be 8 times 3. Let me calculate that: 8 * 3 equals 24 pounds. 
+
+Now, Ali paid with 30 pounds. The change he should get is the amount he paid minus the total cost of the notebooks. So, subtract 24 from 30. 30 minus 24 is 6. Therefore, the change should be 6 pounds. Let me just check my steps again to make sure I didn't make a mistake. Multiplying 8 by 3 gives 24, which seems right. Then subtracting that from 30 gives 6. Yep, that looks correct.
+</think>
+
+{
+  "answer": 6,
+  "unit": "pounds",
+  "solving_steps": [
+    "Each notebook costs 8 pounds, and Ali bought 3 notebooks. Total cost is 8 * 3 = 24 pounds.",
+    "Ali
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 6,
+  "unit": "pounds",
+  "solving_steps": [
+    "Each notebook costs 8 pounds, and Ali bought 3 notebooks. Total cost is 8 * 3 = 24 pounds.",
+    "Ali
+
+>> Sample #6
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A family bought 4 cinema tickets. Each ticket costs 50 pounds. They also bought snacks for 80 pounds. What is the total amount they paid?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a family buying cinema tickets and snacks. I need to find the total amount they paid.
+
+First, there are 4 cinema tickets, each costing 50 pounds. So I should calculate the total cost for the tickets. That would be 4 multiplied by 50. Let me do that: 4 * 50 = 200 pounds.
+
+Then, they also bought snacks for 80 pounds. So I need to add the cost of the snacks to the total cost of the tickets. Adding 200 and 80 gives 280 pounds. 
+
+Wait, let me check again. 4 tickets at 50 each is indeed 200. Then snacks are 80. So 200 + 80 equals 280. That seems right. So the total amount they paid should be 280 pounds. I think that's the answer.
+</think>
+
+{
+  "answer": 280,
+  "unit": "pounds",
+  "solving_steps": ["Calculate the cost of 4 cinema tickets: 4 × 50 = 200 pounds.", "Add the cost of
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 280,
+  "unit": "pounds",
+  "solving_steps": ["Calculate the cost of 4 cinema tickets: 4 × 50 = 200 pounds.", "Add the cost of
+
+>> Sample #7
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A water bottle contains 2 liters of water. Ahmed drank 500 milliliters in the morning and 700 milliliters in the evening. How many milliliters of water are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about Ahmed drinking water from a bottle and figuring out how much is left. The bottle starts with 2 liters. First, I need to convert liters to milliliters because the amounts he drank are given in milliliters. I remember that 1 liter is 1000 milliliters, so 2 liters would be 2000 milliliters. 
+
+Then, Ahmed drank 500 ml in the morning and 700 ml in the evening. I need to add those two amounts together to find the total he drank. 500 plus 700 is 1200 ml. 
+
+Now, subtract the total he drank from the initial amount. So 2000 ml minus 1200 ml should give the remaining water. Let me do that math: 2000 - 1200 equals 800. 
+
+So the answer should be 800 milliliters left. Let me check the steps again to make sure I didn't mix up any units. Yep, converted liters to ml first, added the consumed amounts, subtracted correctly. Looks good.
+</think>
+
+{
+  "
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "
+
+>> Sample #8
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a runner who planned to run 10 kilometers total. He ran 3 km before breakfast and 4 km after. We need to find out how much is left.
+
+First, I should add the distances he already ran. Before breakfast was 3 km, and after breakfast 4 km. So 3 plus 4 equals 7 km total done so far.
+
+Then, subtract that from the total planned distance. The total was 10 km, so 10 minus 7 gives 3 km remaining. That should be the answer. Let me check again: 3 + 4 is 7, 10 -7 is 3. Yep, that makes sense. The unit is kilometers, so the answer is 3 kilometers left.
+</think>
+
+{
+  "answer": 3,
+  "unit": "kilometers",
+  "solving_steps": [
+    "The runner planned to run 10 kilometers in total.",
+    "He ran 3 kilometers before breakfast and 4 kilometers after breakfast, totaling 3 + 4 = 7 kilometers.",
+    "The remaining distance is 10 - 7 = 3 kilometers."
+  ]
+}
+
+>> Problem:
+A runner planned to run 10 kilometers. He ran 3 kilometers before breakfast and 4 kilometers after breakfast. How many kilometers are left to finish his plan?
+
+>> Model Reasoning Steps:
+	- The runner planned to run 10 kilometers in total.
+	- He ran 3 kilometers before breakfast and 4 kilometers after breakfast, totaling 3 + 4 = 7 kilometers.
+	- The remaining distance is 10 - 7 = 3 kilometers.
+
+
+>> Final Actual Result: 3 kilometers
+>> Final Model Result : 3 kilometers
+
+
+-----
+
+
+>> Sample #9
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about figuring out how many buses are needed for a school trip with 45 students, where each bus can carry 15 students.
+
+First, I need to divide the total number of students by the capacity of each bus. So 45 divided by 15. That should give the number of buses required. Let me check: 15 times 3 is 45. So, 45 divided by 15 equals 3. That means exactly 3 buses are needed. There's no remainder here, so no extra bus is necessary. So the answer should be 3 buses.
+</think>
+
+{
+  "answer": 3,
+  "unit": "buses",
+  "solving_steps": ["Total students are 45.", "Each bus carries 15 students.", "Divide total students by bus capacity: 45 ÷ 15 = 3 buses."]
+}
+
+>> Problem:
+A school trip has 45 students. Each bus can carry 15 students. How many buses are needed?
+
+>> Model Reasoning Steps:
+	- Total students are 45.
+	- Each bus carries 15 students.
+	- Divide total students by bus capacity: 45 ÷ 15 = 3 buses.
+
+
+>> Final Actual Result: 3 buses
+>> Final Model Result : 3 buses
+
+
+-----
+
+
+>> Sample #10
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The teacher starts with 36 exam papers. She grades 12 before lunch. So, after grading those, there would be 36 minus 12 left. That's 24. Then she grades 15 more after lunch. So subtract 15 from the remaining 24. That leaves 9 papers ungraded. Wait, let me check the math again. 36 -12 is 24, then 24 -15 is 9. Yeah, that's right. So the answer should be 9.
+</think>
+
+{
+  "answer": 9,
+  "unit": "papers",
+  "solving_steps": ["The teacher starts with 36 exam papers.", "She grades 12 papers before lunch, leaving 36 - 12 = 24 papers.", "She then grades 15 papers after lunch, leaving 24 - 15 = 9 ungraded papers."]
+}
+
+>> Problem:
+A teacher has 36 exam papers. She grades 12 papers before lunch and 15 papers after lunch. How many papers are still ungraded?
+
+>> Model Reasoning Steps:
+	- The teacher starts with 36 exam papers.
+	- She grades 12 papers before lunch, leaving 36 - 12 = 24 papers.
+	- She then grades 15 papers after lunch, leaving 24 - 15 = 9 ungraded papers.
+
+
+>> Final Actual Result: 9 papers
+>> Final Model Result : 9 papers
+
+
+-----
+
+
+>> Sample #11
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A phone battery was at 80 percent. It lost 25 percent while playing a game, then gained 10 percent while charging. What is the battery percentage now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The phone battery starts at 80%. Then it loses 25% while playing a game. Wait, does that mean 25% of the original 80% or 25% of the current battery? Hmm, probably 25% of the current level. So 25% of 80 is 20, so it drops to 60%. Then it gains 10% while charging. Again, 10% of what? If it's 10% of the current 60%, that's 6%, so 60 + 6 = 66%. Let me check again. Starting at 80, minus 25% of 80 is 80 - 20 = 60. Then adding 10% of 60 is 6, so 66. Yeah, that makes sense. So the final battery is 66 percent.
+</think>
+
+{
+  "answer": 66,
+  "unit": "percent",
+  "solving_steps": [
+    "Start with 80 percent battery.",
+    "Lose 25% of 80%:
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 66,
+  "unit": "percent",
+  "solving_steps": [
+    "Start with 80 percent battery.",
+    "Lose 25% of 80%:
+
+>> Sample #12
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A car park had 40 cars. During the morning, 12 cars left and 7 cars entered. How many cars are in the car park now?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a car park that starts with 40 cars. Then, during the morning, 12 cars leave and 7 cars come in. I need to find out how many cars are there now.
+
+First, I'll start with the initial number of cars, which is 40. When 12 cars leave, that means we subtract 12 from 40. So 40 minus 12 is 28. Then, 7 cars enter, so I add 7 to the 28. Adding 7 to 28 gives 35. So the total number of cars now should be 35. Let me check that again. Starting with 40, subtract 12 (40-12=28), then add 7 (28+7=35). Yep, that seems right. The steps make sense, and the arithmetic checks out. The answer should be 35 cars.
+</think>
+
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": ["The car park starts with 40 cars.", "12 cars leave, so 40
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+  "answer": 35,
+  "unit": "cars",
+  "solving_steps": ["The car park starts with 40 cars.", "12 cars leave, so 40
+
+>> Sample #13
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The farmer starts with 60 eggs. He sells 35 of them. So, after selling, he has 60 minus 35 left. Let me calculate that: 60 - 35 equals 25. Then he uses 8 eggs at home. So I need to subtract those 8 from the remaining 25. 25 minus 8 is 17. So the total eggs left should be 17. Let me check again. 60 sold 35, so 25 left. Then 25 minus 8 used is 17. Yep, that seems right.
+</think>
+
+{
+  "answer": 17,
+  "unit": "eggs",
+  "solving_steps": ["The farmer starts with 60 eggs.", "He sells 35 eggs, leaving 60 - 35 = 25 eggs.", "He uses 8 eggs at home, leaving 25 - 8 = 17 eggs."]
+}
+
+>> Problem:
+A farmer collected 60 eggs. He sold 35 eggs and used 8 eggs at home. How many eggs are left?
+
+>> Model Reasoning Steps:
+	- The farmer starts with 60 eggs.
+	- He sells 35 eggs, leaving 60 - 35 = 25 eggs.
+	- He uses 8 eggs at home, leaving 25 - 8 = 17 eggs.
+
+
+>> Final Actual Result: 17 eggs
+>> Final Model Result : 17 eggs
+
+
+-----
+
+
+>> Sample #14
+>> Prompt Used:
+
+You are a problem solving assitant for simple real-word math problems.
+Solve the given problem & return only a valid json schema
+
+Required json schema:
+{
+  "answer": number,
+  "unit": str,
+  "solving_steps": list[str]
+}
+
+Rules
+- Return only a valid json schema.
+- Do not include <think> tags in your response. Return the json schema directly.
+- In units, use the word `percent` for percentages, not `%`.
+
+
+Examples:
+Solve the following problem: Sara has 30 pounds. Her brother gives her another 5 pounds. She wanted to buy a meal that costs 38 pounds. How many pounds does Sara still need?
+Solution: 
+{
+  "answer": 3,
+  "unit": "pounds",
+  "solving_steps": ["Sara first has 30 pounds.", "Her brother gives her 5, she now has 30 + 5 = 35 pounds.", "The meal costs 38, Sara needs 38 - 35 = 3 pounds."]
+}
+
+Solve the following problem: A restaurant prepared 90 meals. By noon, 48 meals were sold. In the afternoon, 27 more meals were sold. How many meals remain?
+
+
+Solution:
+
+
+>> Pure Model Output:
+<think>
+Okay, let's see. The problem is about a restaurant that prepared 90 meals. By noon, they sold 48, and then in the afternoon, they sold 27 more. We need to find out how many meals are left.
+
+First, I need to figure out the total number of meals sold. That would be the sum of the meals sold by noon and in the afternoon. So 48 plus 27. Let me add those. 48 + 27 is 75. So they sold 75 meals in total.
+
+Now, subtract the sold meals from the total prepared. The restaurant had 90 meals. If they sold 75, then the remaining meals would be 90 minus 75. Let me do that subtraction: 90 - 75 equals 15. So, there are 15 meals left.
+
+Wait, let me check again. 48 sold by noon, 27 in the afternoon. 48 + 27 is indeed 75. Then 90 - 75 is 15. Yeah, that seems right. So the answer should be 15 meals remaining.
+</think>
+
+{
+
+
+
+
+			Model Did not return Json
+
+Model Output:
+
+
+{
+

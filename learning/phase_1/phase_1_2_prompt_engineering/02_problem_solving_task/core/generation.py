@@ -1,0 +1,58 @@
+# ---------------------------------------
+# Using models to generate
+# ---------------------------------------
+
+from helpers.config     import PROVIDER_GROQ
+
+from providers.groq     import GroqModelsAPI
+
+from groq.types.chat    import ChatCompletion
+
+
+def get_llm_api(provider: str, api_key: str) -> GroqModelsAPI:
+    provider = provider.lower()
+    if provider == PROVIDER_GROQ:
+        return GroqModelsAPI(api_key = api_key)
+
+    
+
+    raise ValueError(f"Provider name: {provider} is not valid")
+
+
+
+def generate(
+    provider             : str,
+    api_key              : str,
+    model_name           : str,
+    query                : str,
+    system_prompt        : str | None = None,
+    return_whole_response: bool = False,
+    **kwargs
+) -> ChatCompletion | str:
+    """
+    Abstract function for calling an LLM using these LLM providers:
+        - groq
+        - google_genai
+    
+    Args:
+        provider             : the name of the provider (groq | google_genai).
+        api_key              : the provider api key
+        model_name           : the model used in generation
+        query                : the user query
+        return_whole_response: whether to return the whole response of just the output text
+        
+    Returns:
+        response (ChatCompletion | GenerateContentResponse | str)
+    """
+    llm_api = get_llm_api(provider = provider, api_key = api_key)
+
+    if "stream" in kwargs:
+        kwargs.pop("stream")
+        
+    return llm_api.generate(
+        model_name            = model_name,
+        query                 = query,
+        system_prompt         = system_prompt,
+        return_whole_response = return_whole_response,
+        **kwargs
+    )
