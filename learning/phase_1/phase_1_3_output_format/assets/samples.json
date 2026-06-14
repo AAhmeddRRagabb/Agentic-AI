@@ -1,0 +1,82 @@
+[
+    {
+        "complexity": "low",
+        "query": "Show all customers."
+    },
+    {
+        "complexity": "low",
+        "query": "Get the names and emails of all users."
+    },
+    {
+        "complexity": "low",
+        "query": "Find all products with a price greater than 100."
+    },
+    {
+        "complexity": "low",
+        "query": "List all orders placed today."
+    },
+    {
+        "complexity": "low",
+        "query": "Show all employees in the sales department."
+    },
+    {
+        "complexity": "low",
+        "query": "Get the total number of users."
+    },
+    {
+        "complexity": "medium",
+        "query": "Show each customer with the total number of orders they have placed."
+    },
+    {
+        "complexity": "medium",
+        "query": "Find the top 5 products by total sales quantity."
+    },
+    {
+        "complexity": "medium",
+        "query": "Get all users who registered in the last 30 days."
+    },
+    {
+        "complexity": "medium",
+        "query": "Show the total revenue for each month in 2025."
+    },
+    {
+        "complexity": "medium",
+        "query": "List customers who have placed more than 3 orders."
+    },
+    {
+        "complexity": "medium",
+        "query": "Find products that have never been ordered."
+    },
+    {
+        "complexity": "medium",
+        "query": "Show orders with the customer name and order total."
+    },
+    {
+        "complexity": "high",
+        "query": "Find customers whose total spending is higher than the average total spending of all customers."
+    },
+    {
+        "complexity": "high",
+        "query": "Show the best-selling product in each category."
+    },
+    {
+        "complexity": "high",
+        "query": "Find users who placed an order in January but did not place any order in February."
+    },
+    {
+        "complexity": "high",
+        "query": "Calculate the month-over-month revenue growth percentage for each month."
+    },
+    {
+        "complexity": "high",
+        "query": "Show the second highest salary in each department."
+    },
+    {
+        "complexity": "high",
+        "query": "Find customers who bought products from at least three different categories."
+    },
+    {
+        "complexity": "high",
+        "query": "Rank customers by total spending within each country."
+    }
+]
