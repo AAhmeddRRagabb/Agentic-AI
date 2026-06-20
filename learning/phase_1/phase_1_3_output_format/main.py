@@ -104,6 +104,7 @@ def run_experiment(
 
     parsed = parse_model_output(model_response)
     validation_err = parsed["error"]
+    
     if parsed["success"]:
         results = {
             "user_query"  : query,

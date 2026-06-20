@@ -3,10 +3,10 @@
 # -----------------------------------------------
 
 
-from helpers.functional import print_list
 
 from groq import Groq
 from groq.types.chat import ChatCompletion
+
 
 class GroqModelsAPI:
     """
@@ -101,17 +101,21 @@ class GroqModelsAPI:
         """
         Preparing the inputs for the invoking
         """
-        return [
-            {
+        messages = []
+        if system_prompt:
+            messages.append({
                 "role"   : "system",
                 "content": system_prompt
-            },
+            })
 
+        messages.append(
             {
                 "role"   : "user",
                 "content": user_input
             }
-        ]
+        )
+
+        return messages
     
 
 
